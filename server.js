@@ -1,17 +1,17 @@
 // modules =================================================
-var express        = require('express');
-var app            = express();
-var mongoose       = require('mongoose');
-var bodyParser     = require('body-parser');
-var methodOverride = require('method-override');
-var port = 3000
+var express        = require('express')
+var app            = express()
+var mongoose       = require('mongoose')
+var bodyParser     = require('body-parser')
+var methodOverride = require('method-override')
+var port = process.env.PORT || 8080;
 
 
 // configuration ===========================================
 	
 // config files
-var db = require('./config/db');
-exports = module.exports = app; 
+var db = require('./config/db')
+
 
 
 // mongoose.connect(db.url); // connect to our mongoDB database (commented out after you enter in your own credentials)
@@ -42,4 +42,11 @@ mongoose.connect('mongodb://heroku_5lc533c5:vlfo62l9j2jlno0i17tgi43rdc@ds119772.
 if (error) console.error (error);
 else console.log ('mongo connected')
 
-});			
+});
+
+
+
+
+
+
+exports = module.exports = app; 			
