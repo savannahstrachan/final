@@ -4,6 +4,8 @@ var app            = express();
 var mongoose       = require('mongoose');
 var bodyParser     = require('body-parser');
 var methodOverride = require('method-override');
+var port = 3000
+
 
 // configuration ===========================================
 	
@@ -27,7 +29,6 @@ require('./api/routes')(app); // pass our application into our routes
 
 // start app ===============================================
  // set our port
-var port = process.env.PORT || 8080;
 app.listen(process.env.PORT || 5000, function(err) {  // this is changed-- Heroku knows what
 	// to put in there. fallback is whatever is past ||.
   if (err) {
