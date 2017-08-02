@@ -44,6 +44,29 @@ else console.log ('mongo connected')
 
 });
 
+var ASchema = new mongoose.Schema ({
+	firstName: String,
+	lastName: String,
+	year: Number,
+	emailAddress: String,	
+	ID: Number
+},{ collection: "Alumni"}
+);
+
+
+
+var Restaurant = mongoose.model('alumni', RSchema);
+
+app.post('/add-alumni', function (req, res){
+	console.log("/alumni endpoint getting hit");
+	
+	var alumni = new Alumni(req.body);
+
+	alumni.save(function(err){
+		console.log(alumni)
+		
+			})
+});
 
 
 
