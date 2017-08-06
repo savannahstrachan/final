@@ -11,7 +11,14 @@ var port = process.env.PORT || 8080;
 	
 // config files
 // var db = require('./config/db')
+mongoose.connect('mongodb://heroku_5lc533c5:vlfo62l9j2jlno0i17tgi43rdc@ds119772.mlab.com:19772/heroku_5lc533c5', function(error){
 
+	console.log ('mongo connected here too!');
+	
+if (error) console.error (error);
+else console.log ('mongo connected');
+
+});
 
 
 // mongoose.connect(db.url); // connect to our mongoDB database (commented out after you enter in your own credentials)
@@ -39,13 +46,7 @@ app.listen(process.env.PORT || 5000, function(err) {  // this is changed-- Herok
 
 console.log ('anything')
 
-mongoose.connect('mongodb://heroku_5lc533c5:vlfo62l9j2jlno0i17tgi43rdc@ds119772.mlab.com:19772/heroku_5lc533c5', function(error){
 
-	console.log ('mongo connected here too!');
-if (error) console.error (error);
-else console.log ('mongo connected');
-
-});
 
 var ASchema = new mongoose.Schema ({
 	firstName: String,
