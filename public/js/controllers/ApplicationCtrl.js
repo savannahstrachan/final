@@ -1,6 +1,6 @@
 angular.module('ApplicationCtrl', []).controller('ApplicationController', function($scope) {
 
-	$scope.tagline = 'send your app!';
+	$scope.tagline = 'send your appplication!';
 
 	  $(document).ready(function() {
     $('#contact_form').bootstrapValidator({
@@ -90,7 +90,7 @@ angular.module('ApplicationCtrl', []).controller('ApplicationController', functi
                     }
                 }
             },
-            comment: {
+            comment1: {
                 validators: {
                       stringLength: {
                         min: 10,
