@@ -8,9 +8,8 @@
   },
   "author": "Bill, Savannah, Christian, Kerry and Will",
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "express": "^4.14.0",
-    "mongoose": "4.0.6"
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.0.6"
   }
 }
-
