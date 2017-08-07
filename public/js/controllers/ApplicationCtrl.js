@@ -124,6 +124,18 @@ angular.module('ApplicationCtrl', []).controller('ApplicationController', functi
         });
 });
 
+    $scope.addApp = function(response){
+            
+            console.log($scope.appData);
+        
+        $http.post("https://final-project-loyno.herokuapp.com/add-app",
+            $scope.appData).then(function(err, res){
+
+                $scope.appData = {};
+                // res.send($scope.inputData);
+            }
+            }
+        };
 
 
 });
