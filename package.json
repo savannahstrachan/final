@@ -1,11 +1,16 @@
 {
-  "name": "starter-node-angular",
+  "name": "Final Project",
+  "version": "1.0.0",
+  "description": "Team America Final Project",
   "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Bill, Savannah, Christian, Kerry and Will",
   "dependencies": {
-    "express" : "~4.5.1",
-	"mongoose" : "~3.8.0",
-	"body-parser" : "~1.4.2",
-	"method-override" : "~2.0.2"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "4.0.6"
   }
 }
 

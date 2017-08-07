@@ -10,7 +10,8 @@ var port = process.env.PORT || 8080;
 // configuration ===========================================
 	
 // config files
-// var db = require('./config/db')
+var db = require('./config/db')
+
 mongoose.connect('mongodb://heroku_5lc533c5:vlfo62l9j2jlno0i17tgi43rdc@ds119772.mlab.com:19772/heroku_5lc533c5', function(error){
 
 	console.log ('mongo connected here too!');
@@ -20,6 +21,7 @@ else console.log ('mongo connected');
 
 });
 
+console.log ('anything')
 
 // mongoose.connect(db.url); // connect to our mongoDB database (commented out after you enter in your own credentials)
 
@@ -44,30 +46,38 @@ app.listen(process.env.PORT || 5000, function(err) {  // this is changed-- Herok
   console.log(`Magic is happening on ${process.env.PORT}`)
 })
 
-console.log ('anything')
+
 
 
 
 var ASchema = new mongoose.Schema ({
 	firstName: String,
 	lastName: String,
-	year: Number,
-	emailAddress: String,	
-	ID: Number
-},{ collection: "Alumni"}
+	emailAddress: String,
+	phone: Number,
+	streetAddress: String,
+	city: String,
+	state: String,
+	zipCode: Number,
+	codeSkill: Number,
+	describe: Number,
+	link: String,
+	projectDesc: String,
+	ID: Number,
+},{ collection: "Application"}
 );
 
 
 
-var Alumni = mongoose.model('alumni', ASchema);
+var Application = mongoose.model('application', ASchema);
 
-app.post('/add-alumni', function (req, res){
-	console.log("/alumni endpoint getting hit");
+app.post('/add-app', function (req, res){
+	console.log("/app endpoint getting hit");
 	
-	var alumni = new Alumni(req.body);
+	var application = new Application(req.body);
 
-	alumni.save(function(err){
-		console.log(alumni)
+	application.save(function(err){
+		console.log(application);
 		
 			})
 });
