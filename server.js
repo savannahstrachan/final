@@ -47,9 +47,6 @@ app.listen(process.env.PORT || 5000, function(err) {  // this is changed-- Herok
 })
 
 
-
-
-
 var ASchema = new mongoose.Schema ({
 	firstName: String,
 	lastName: String,
@@ -64,7 +61,7 @@ var ASchema = new mongoose.Schema ({
 	link: String,
 	projectDesc: String,
 	ID: Number,
-},{ collection: "Application"}
+},{ collection: "application"}
 );
 
 
@@ -78,6 +75,34 @@ app.post('/add-app', function (req, res){
 
 	application.save(function(err){
 		console.log(application);
+		
+			})
+});
+
+var CSchema = new mongoose.Schema ({
+	firstName: String,
+	lastName: String,
+	emailAddress: String,
+	phone: Number,
+	codeSkill: Number,
+	describe: Number,
+	link: String,
+	projectDesc: String,
+	ID: Number,
+},{ collection: "contact"}
+);
+
+
+
+var Contact = mongoose.model('contact', CSchema);
+
+app.post('/add-contact', function (req, res){
+	console.log("/contact endpoint getting hit");
+	
+	var contact = new Contact(req.body);
+
+	contact.save(function(err){
+		console.log(contact);
 		
 			})
 });

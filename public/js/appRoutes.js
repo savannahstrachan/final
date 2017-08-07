@@ -41,8 +41,12 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		.when('/alumni', {
 			templateUrl: 'views/Alumni.html',
 			controller: 'AlumniController'
-		});
+		})
 
+		.when('/admin', {
+			templateUrl: 'views/Admin.html',
+			controller: 'AdminController'
+		});
 
 	$locationProvider.html5Mode(true);
 
