@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <base href="/">
 
-  <title>Loyola</title>
+  <title>Loyola University New Orleans</title>
 
   <!-- AJAX + JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -65,54 +65,56 @@
  
 
 </head>
+
 <body ng-app="sampleApp" ng-controller="AlumniController">
-<div class="container">
-  
-  <!-- NAV -->
+ <!-- NAV -->
 
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img class="wordmark" src="resources/images/logowordmark.png"></a>
+      </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li><a href="#">Certificate in Software Development and Coding</a></li>
-        <li><a href="#">College of Business</a>
-        <li><a href="#">Center for Entrepreneurship</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/application">Apply</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course Info <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/instructor">Instructors</a></li>
-            <li><a href="/details">Course Details</a></li>
-            <li><a href="/partners">Partners</a></li>
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experience <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/alumni">Alumni</a></li>
-            <li><a href="/projects">Past Projects</a></li>
-            <li><a href="/visits">Site Visits</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      
+        <div class="universityLinks">
+        <ul class="nav navbar-nav">
+          <span><a class="college" href="#">College of Business</a></span>
+          <span class="divider">|</span>
+          <span><a class="center" href="#">Center for Entrepreneurship</a></span>
+          <span><a class="course" href="#">Certificate in  Coding and Software Development</a></span>
+        </ul>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Blog</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Syllabus</a></li>
+              <li><a href="#">Schedule</a></li>
+              <li><a href="#">Site Visits</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html">Overview</a></li>
+              <li><a href="faculty.html">Faculty</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
 
 
 <!-- /NAV -->
@@ -121,7 +123,6 @@
   <div ng-view></div>
 
 
-</div>
 
  <!-- AJAX + JQUERY -->
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

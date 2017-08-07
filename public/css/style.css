@@ -1,38 +1,86 @@
-s/*body { padding-top:30px; }
+/*font resources*/
+@font-face {
+  font-family: SlabBold;
+  src: local("Roboto Slab"),
+       local("RobotoSlab-Bold"),
+       url(RobotoSlab-Bold.ttf);
+}
 
-#success_message{ display: none;}*/
+@font-face {
+  font-family: SlabLight;
+  src: local("RobotoSlab-Light"),
+       url(RobotoSlab-Light.ttf);
+}
+
+@font-face {
+	font-family: SlabRegular;
+	 Src: local("RobotoSlab-Regular"),
+	 url(RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+	font-family: SlabThin;
+	Src: local("RobotoSlab-Thin"),
+	url(RobotoSlab-Thin.ttf);
+}
 
 .navbar-default .navbar-nav>li>a{
+	color:#e5554f;
 	/*color: red;*/
+}
+.universityLinks{
+	margin-top: 14px;
+}
+
+ul.nav.navbar-nav{
+	margin-left: -6px;
+
+}
+
+nav.navbar{
+	height: 80px;
+	background: -webkit-linear-gradient(#ffd700, #ffe44d);
+}
+
+.wordmark {
+	width: 110px;
+	margin-left: 5px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-right: solid 2.5px #af2a2f;
 }
 
 a.college {
+	font-family: SlabBold;
+	color: #e5554f;
 	font-size: 20px;
 	text-decoration: none;
 }
 
 a.center {
+	font-family: SlabBold;
+	color: #e5554f;
 	font-size: 20px;
 	text-decoration: none;
 }
 
-span.divider{font-size: 20px;}
+span.divider{
+	font-size: 20px;
+	margin-left: 1px;
+	margin-right: 1px;
+	color: #af2a2f;
+}
 
 a.course {
-	font-family: "slab-bold", serif;
+	font-family: SlabLight, serif;
+	color: #af2a2f;
 	text-decoration: none;
 	display: block;
 	font-size: 20px;
-	line-height: 0.7em;
-	letter-spacing: 0.85px;
-	font-weight: lighter;
-}
+	line-height: 0.8em;
+	letter-spacing: 0.3px;
 
-@font-face {
-  font-family: slab-bold;
-  src: local("RobotoSlab"),
-       url(RobotoSlab-Bold.ttf);
-  font-weight: bold;
 }
 
 .src-image {
