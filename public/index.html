@@ -35,8 +35,8 @@
   <script src="js/controllers/AlumniCtrl.js"></script>
   <script src="js/services/AlumniService.js"></script>
   <!-- APPLICATION -->
-  <script src="js/controllers/ApplicationCtrl.js"></script>
-  <script src="js/services/ApplicationService.js"></script>
+<!--   <script src="js/controllers/ApplicationCtrl.js"></script>
+  <script src="js/services/ApplicationService.js"></script> -->
   <!-- CONTACT -->
   <script src="js/controllers/ContactCtrl.js"></script>
   <script src="js/services/ContactService.js"></script>
@@ -52,9 +52,15 @@
   <!-- OVERVIEW -->
   <script src="js/controllers/OverviewCtrl.js"></script>
   <script src="js/services/OverviewService.js"></script>
-  <!--   Admin -->
   <script src="js/controllers/AdminCtrls.js"></script>
   <script src="js/services/AdminService.js"></script>
+  <!--   Admin -->
+  <!-- FAQ -->
+  <script src="js/controllers/FAQCtrl.js"></script>
+  <script src="js/services/FAQService.js"></script>
+  <!-- PREWORK -->
+  <script src="js/controllers/PreworkCtrl.js"></script>
+  <script src="js/services/PreworkService.js"></script>
   <!-- ROUTES -->
   <script src="js/appRoutes.js"></script>
   <script src="js/app.js"></script>
@@ -102,20 +108,20 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experience<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Student Projects</a></li>
-              <li><a href="#">Past Site Visits</a></li>
-              <li><a href="#">Our Alumni</a></li>
+              <li><a href="/projects">Student Projects</a></li>
+              <li><a href="/visits">Past Site Visits</a></li>
+              <li><a href="/alumni">Our Alumni</a></li>
               <li class="divider"></li>
-              <li><a href="#">Admitted Students</a></li>
+              <li><a href="/prework">Admitted Students</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course Info<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="about.html">Overview</a></li>
-              <li><a href="faculty.html">Instructors</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="/overview">Overview</a></li>
+              <li><a href="/instructors">Instructors</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/contact">Contact Us</a></li>
               <li class="divider"></li>
               <li><a href="/admin.html">Admin Login</a></li>
             </ul>

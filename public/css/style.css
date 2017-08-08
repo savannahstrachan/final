@@ -78,9 +78,6 @@
 	background-color: #ffe44d; 
 }
 
-.dropdown-menu>li>a:visited{
-	background-color: red; 
-}
 .universityLinks{
 	margin-top: 14px;
 	display: inline-block;
@@ -256,7 +253,7 @@ a.course {
 .alumni{
 	background-image: url("../resources/images/crossword.png");
 	background-repeat: repeat;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 .row{
@@ -272,6 +269,7 @@ a.course {
 }
 
 .card {
+  margin-top: 22px;
   padding: 6px;
   border-radius: 8px;
   height: auto;
@@ -320,3 +318,45 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+
+@media only screen and (max-width: 510px){
+	.card{
+		margin-top: 10px;
+	}
+}
+
+#wow {
+	display: flex;
+}
+
+#menu {
+	border: 1px solid black;
+}
+
+#menuHeader {
+	display:inline;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+
+#menuHeaderList {
+	border-bottom: 1px solid black;
+}
+
+#menuHeader li {
+	display: inline;
+    list-style: none;
+}
+
+#menuHeader h2 {
+	margin:0;
+    padding:20px;
+    display:inline;
+}
+
+.twitter-timeline {
+	float: left;
+	position: relative;
+}
+
