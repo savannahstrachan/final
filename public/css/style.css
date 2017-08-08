@@ -422,3 +422,11 @@ tr:nth-child(even) {
 .panel-default>.panel-heading {
 	background-color: transparent;
 }
+
+.panel.panel-default {
+	height: 560px;
+}
+
+.panel-heading img {
+	border-radius: 6px;
+}
