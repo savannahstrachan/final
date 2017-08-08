@@ -44,6 +44,11 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'FAQController'
 		})
 
+		.when('/application', {
+			templateUrl: 'views/application.html',
+			controller: 'ApplicationController'
+		})
+
 		.when('/prework', {
 			templateUrl: 'views/prework.html',
 			controller: 'PreworkController'
