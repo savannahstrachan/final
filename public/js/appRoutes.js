@@ -44,7 +44,7 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		})
 
 		.when('/admin', {
-			templateUrl: 'views/Admin.html',
+			templateUrl: 'views/admin.html',
 			controller: 'AdminController'
 		});
 
