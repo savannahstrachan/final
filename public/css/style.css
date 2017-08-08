@@ -1,3 +1,306 @@
-body { padding-top:30px; }
+/*font resources*/
+@font-face {
+  font-family: SlabBold;
+  src: local("Roboto Slab"),
+       local("RobotoSlab-Bold"),
+       url(RobotoSlab-Bold.ttf);
+}
 
-#success_message{ display: none;}
+@font-face {
+  font-family: SlabLight;
+  src: local("RobotoSlab-Light"),
+       url(RobotoSlab-Light.ttf);
+}
+
+@font-face {
+	font-family: SlabRegular;
+	 Src: local("RobotoSlab-Regular"),
+	 url(RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+	font-family: SlabThin;
+	Src: local("RobotoSlab-Thin"),
+	url(RobotoSlab-Thin.ttf);
+}
+
+@font-face {
+	font-family: FaithAndGloryTwo;
+	Src: local("Faith And Glory Two"),
+	url(Faith And Glory Two.otf);
+}
+
+@font-face {
+	font-family: ProximaNovaLight;
+	Src: local("ProximaNovaAW01-Light"),
+	url(ProximaNovaLight.ttf);
+}
+
+.fix{
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color:#e5554f;
+	margin-top: 13px;
+	/*color: red;*/
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	color:#af2a2f;
+}
+
+.navbar-default .navbar-nav>li>a:active{
+	color:#af2a2f;
+}
+
+.navbar-default .navbar-nav>li>a:visited{
+	color:#af2a2f;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color:#e5554f;
+    background-color: rgba(255, 255, 255, 5);
+}
+
+.navbar-collapse{
+	background-color: white; 
+}
+@media only screen and (min-width: 768px){
+.navbar-collapse{
+	background-color: transparent;
+}
+}
+
+.dropdown-menu>li>a:hover{
+	background-color: #ffe44d; 
+}
+
+.dropdown-menu>li>a:visited{
+	background-color: red; 
+}
+.universityLinks{
+	margin-top: 14px;
+	display: inline-block;
+}
+
+ul.nav.navbar-nav{
+	margin-left: -6px;
+
+}
+
+nav.navbar{
+	height: 80px;
+	background: -webkit-linear-gradient(#ffd700, #ffe44d);
+	border: none;
+	border-radius: 0px;
+}
+
+.navbar-toggle.collapsed{
+	margin-top: 23px;
+	background-color: white;
+	margin-right: 10px; 
+}
+
+.navbar-toggle{
+	margin-top: 23px;
+	background-color: white;
+	margin-right: 10px; 
+}
+
+.wordmark {
+	width: 110px;
+	margin-left: 15px;
+	padding-right: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-right: solid 2.5px #af2a2f;
+}
+
+a.college {
+	font-family: SlabBold;
+	color: #e5554f;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+a.center {
+	font-family: SlabBold;
+	color: #e5554f;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+span.divider{
+	font-size: 20px;
+	margin-left: 1px;
+	margin-right: 1px;
+	color: #af2a2f;
+}
+
+a.course {
+	font-family: SlabLight, serif;
+	color: #af2a2f;
+	text-decoration: none;
+	display: block;
+	font-size: 20px;
+	line-height: 0.8em;
+	letter-spacing: 0.3px;
+
+}
+
+@media only screen and (max-width: 980px){
+	.universityLinks{
+		margin-top: 18px;
+		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	.universityLinks a, .universityLinks span {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 980px) {
+	.wordmark{
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 770px){
+	.universityLinks{
+		margin-top: 13px;
+		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.universityLinks a, .universityLinks span {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 770px){
+	.universityLinks{
+		margin-top: 11px;
+		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 549px){
+	.universityLinks a, .univesityLinks span {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (max-width: 549px){
+	.wordmark{
+		width: 80px;
+	}
+}
+
+@media only screen and (max-width: 570px){
+	.universityLinks{
+		margin-top: 10px;
+	}
+}
+
+@media only screen and (max-width: 510px){
+	.universityLinks a, .univesityLinks span{
+		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 510px){
+	 	span.divider{
+		font-size: 10px;
+	}
+}
+
+
+@media only screen and (max-width: 510px){
+	.universityLinks{
+		margin-top: 13px;
+	}
+}
+
+@media only screen and (max-width: 510px){
+	.universityLinks{
+		margin-left: -2px;
+	}
+}
+
+@media only screen and (max-width: 570px){
+	.wordmark{
+		width: 100px;
+	}
+}
+
+@media only screen and (max-width: 510px){
+	.wordmark{
+		width: 75px;
+		margin-top: 8px;
+		margin-left: 0px;
+	}
+}
+
+
+
+.view{
+	padding-top: 80px;
+}
+
+/*Alumni view:*/
+
+.alumni{
+	background-image: url("../resources/images/crossword.png");
+	background-repeat: repeat;
+	padding-bottom: 10px;
+}
+
+.row{
+	text-align: center;
+}
+
+.col-xs-4{
+	padding: 10px; 
+}
+
+.src-image {
+  display: none;
+}
+
+.card {
+  padding: 6px;
+  border-radius: 8px;
+  height: auto;
+  background: radial-gradient(#e5554f, #b30000);
+/*  background-color: #284c79;
+  color: rgb(136, 172, 217);*/
+}
+
+.card .avatar {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  z-index: 100;
+}
+
+.card .avatar img {
+  max-width: 200px;
+  border-radius: 100%;
+  border: 5px solid rgba(0,0,30,0.8);
+}
+
+.pagetitle{
+	font-family: FaithAndGloryTwo;
+	font-size: 100px;
+	color: #000000;
+}
+
+.pageline{
+	font-family: SlabLight;
+	color: #e5554f;
+	margin-top: -5px;
+}
