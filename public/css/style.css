@@ -364,6 +364,8 @@ tr:nth-child(even) {
 	position: relative;
 }
 
+.panel-heading img{
+	width: 300px;
 /*home view*/
 
 .jumbotron.text-center{
