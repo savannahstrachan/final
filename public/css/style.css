@@ -66,7 +66,7 @@
 }
 
 .navbar-collapse{
-	background-color: white;
+	background-color: white; 
 }
 @media only screen and (min-width: 768px){
 .navbar-collapse{
@@ -99,6 +99,12 @@ nav.navbar{
 }
 
 .navbar-toggle.collapsed{
+	margin-top: 23px;
+	background-color: white;
+	margin-right: 10px; 
+}
+
+.navbar-toggle{
 	margin-top: 23px;
 	background-color: white;
 	margin-right: 10px; 
@@ -243,7 +249,6 @@ a.course {
 
 .view{
 	padding-top: 80px;
-	padding-bottom: 10px;
 }
 
 /*Alumni view:*/
@@ -251,6 +256,7 @@ a.course {
 .alumni{
 	background-image: url("../resources/images/crossword.png");
 	background-repeat: repeat;
+	padding-bottom: 10px;
 }
 
 .row{
