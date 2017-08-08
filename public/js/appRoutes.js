@@ -51,6 +51,11 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		.when('/faq', {
 			templateUrl: 'views/faq.html',
 			controller: 'FAQController'
+		})
+
+		.when('/prework', {
+			templateUrl: 'views/prework.html',
+			controller: 'PreworkController'
 		});
 
 	$locationProvider.html5Mode(true);
