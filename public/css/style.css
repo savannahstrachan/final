@@ -371,6 +371,7 @@ tr:nth-child(even) {
 
 .jumbotron.text-center{
 	padding: 0px;
+	margin-top: 30px;
 }
 
 .carousel-control{
@@ -380,6 +381,7 @@ tr:nth-child(even) {
 .lefty {
 	text-align: left;
 	padding-top: 10px;
+	background-color: rgba(132,129,125,0.2);
 }
 
 .righty {
@@ -413,4 +415,10 @@ tr:nth-child(even) {
 
 .menulist li{
 	margin-top: 10px;
+}
+
+/*site visits*/
+
+.panel-default>.panel-heading {
+	background-color: transparent;
 }
