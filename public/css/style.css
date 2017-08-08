@@ -256,7 +256,7 @@ a.course {
 .alumni{
 	background-image: url("../resources/images/crossword.png");
 	background-repeat: repeat;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 .row{
@@ -272,6 +272,7 @@ a.course {
 }
 
 .card {
+  margin-top: 22px;
   padding: 6px;
   border-radius: 8px;
   height: auto;
@@ -305,7 +306,11 @@ a.course {
 	margin-top: -5px;
 }
 
-#success_message{ display: none;}
+@media only screen and (max-width: 510px){
+	.card{
+		margin-top: 10px;
+	}
+}
 
 #wow {
 	display: flex;
@@ -341,3 +346,4 @@ a.course {
 	float: left;
 	position: relative;
 }
+
