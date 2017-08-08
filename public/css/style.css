@@ -304,3 +304,40 @@ a.course {
 	color: #e5554f;
 	margin-top: -5px;
 }
+
+#success_message{ display: none;}
+
+#wow {
+	display: flex;
+}
+
+#menu {
+	border: 1px solid black;
+}
+
+#menuHeader {
+	display:inline;
+    padding: 20px;
+    margin: 20px;
+    text-align: left;
+}
+
+#menuHeaderList {
+	border-bottom: 1px solid black;
+}
+
+#menuHeader li {
+	display: inline;
+    list-style: none;
+}
+
+#menuHeader h2 {
+	margin:0;
+    padding:20px;
+    display:inline;
+}
+
+.twitter-timeline {
+	float: left;
+	position: relative;
+}
