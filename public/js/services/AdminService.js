@@ -2,7 +2,7 @@ angular.module('AdminService', []).service('Admin', ['$http', function($scope, $
 
 
  // $scope.dispClick = function (res){
- 	$scope.displayName = MainServ.getName();
+ 	$scope.displayName = ApplicationService.getName();
        console.log($scope.displayName);
 
 }]);

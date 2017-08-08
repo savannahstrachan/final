@@ -133,8 +133,7 @@ angular.module('ApplicationCtrl', []).controller('ApplicationController', functi
 
                 $scope.appData = {};
                 // res.send($scope.inputData);
-            }
-            }
+            });
         };
 
 

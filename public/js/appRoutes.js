@@ -52,6 +52,9 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		.when('/prework', {
 			templateUrl: 'views/prework.html',
 			controller: 'PreworkController'
+		.when('/admin', {
+			templateUrl: 'views/admin.html',
+			controller: 'AdminController'
 		});
 
 	$locationProvider.html5Mode(true);
