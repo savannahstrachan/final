@@ -1,9 +1,159 @@
-<button onclick="loginFunc()">Click here to login</button>
+<div class="input-group col-md-4 control-label form-group">
+<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input type="text" class= "form-control" placeholder="User Name"></><br>
+<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+<input type="text" class= "form-control" placeholder="Password"></><br>
+</div>
 
-<p id="demo"></p>
+<button id="submit" type="button" class = "btn" ng-click="subClick()">SUBMIT</button> 
 
 
-<h1> Name: {{ displayApp.firstName displayApp.lastName}} </h1>
+
 <!-- <h3> Email: {{ displayName.hunger }} </h3>
 <h3> Price level: {{ displayName.price }} </h3>
 <h3> Booze: {{ displayName.alcohol }} </h3> -->
+
+ <div ng-show = "showMe=='show'">
+<table>
+  <tr>
+    <th scope="col" class="col-xs-3">First Name</th>
+    <th scope="col" class="col-xs-3">Last Name</th>
+    <th scope="col" class="col-xs-3">Email</th>
+    <th scope="col" class="col-xs-3">Phone</th>
+    <th scope="col" class="col-xs-3">Street Address</th>
+    <th scope="col" class="col-xs-3">City</th>
+    <th scope="col" class="col-xs-3">State</th>
+    <th scope="col" class="col-xs-3">Zip</th>
+    <th scope="col" class="col-xs-3">Code Skill Level</th>
+    <th scope="col" class="col-xs-3">I am a: </th>
+    <th scope="col" class="col-xs-3">Project link</th>
+    <th scope="col" class="col-xs-3">Project description</th>
+    <th scope="col" class="col-xs-3">ID #</th>
+  </tr>
+
+  <tr>
+  	<!-- <th scope="col">First Name</th> -->
+  	<td>Mac</td>
+
+    <!-- <th scope="col">Last Name</th> -->
+    <td>Rebbinack</td>
+
+    <!-- <th scope="col">Email</th> -->
+    <td>drjohn@gmail.com</td>
+
+    <!-- <th scope="col">Phone</th> -->
+    <td>(504) 456-0987</td>
+
+    <!-- <th scope="col">Street Address</th> -->
+    <td>123 Fake St.</td>
+
+    <!-- <th scope="col">City</th> -->
+    <td>New Orleans</td>
+
+    <!-- <th scope="col">State</th> -->
+    <td>Louisiana</td>
+
+    <!-- <th scope="col">Zip</th> -->
+    <td>70130</td>
+
+    <!-- <th scope="col">Code Skill Level</th> -->
+    <td> 3 </td>
+
+    <!-- <th scope="col">I am a: </th> -->
+    <td>Current Student</td>
+
+    <!-- <th scope="col">Project link</th> -->
+    <td>https://final-project.herokuapp.com</td>
+
+    <!-- <th scope="col">Project description</th> -->
+    <td>Final project from CSS class</td>
+    
+    <!-- <th scope="col">ID #</th> -->
+    <td>435</td>
+  </tr>
+
+  <tr>
+  	<!-- <th scope="col">First Name</th> -->
+  	<td>James</td>
+
+    <!-- <th scope="col">Last Name</th> -->
+    <td>Booker</td>
+
+    <!-- <th scope="col">Email</th> -->
+    <td>stareyes@gmail.com</td>
+
+    <!-- <th scope="col">Phone</th> -->
+    <td>(504) 567-9087</td>
+
+    <!-- <th scope="col">Street Address</th> -->
+    <td>4502 Basin St.</td>
+
+    <!-- <th scope="col">City</th> -->
+    <td>New Orleans</td>
+
+    <!-- <th scope="col">State</th> -->
+    <td>Louisiana</td>
+
+    <!-- <th scope="col">Zip</th> -->
+    <td>70113</td>
+
+    <!-- <th scope="col">Code Skill Level</th> -->
+    <td> 1 </td>
+
+    <!-- <th scope="col">I am a: </th> -->
+    <td> Industry Professional </td>
+
+    <!-- <th scope="col">Project link</th> -->
+    <td> http://blog.lookfar.com/author/blake-butterworth/</td>
+
+    <!-- <th scope="col">Project description</th> -->
+    <td>Professional blog</td>
+    
+    <!-- <th scope="col">ID #</th> -->
+    <td>436</td>
+  </tr>
+
+  <tr>
+  	<!-- <th scope="col">First Name</th> -->
+  	<td>Lee</td>
+
+    <!-- <th scope="col">Last Name</th> -->
+    <td>Dorsey</td>
+
+    <!-- <th scope="col">Email</th> -->
+    <td>ldorsey@tulane.edu</td>
+
+    <!-- <th scope="col">Phone</th> -->
+    <td>(504) 767-9897</td>
+
+    <!-- <th scope="col">Street Address</th> -->
+    <td>1717 Coliseum St.</td>
+
+    <!-- <th scope="col">City</th> -->
+    <td>New Orleans</td>
+
+    <!-- <th scope="col">State</th> -->
+    <td>Louisiana</td>
+
+    <!-- <th scope="col">Zip</th> -->
+    <td>70103</td>
+
+    <!-- <th scope="col">Code Skill Level</th> -->
+    <td> 6 </td>
+
+    <!-- <th scope="col">I am a: </th> -->
+    <td> Current Student </td>
+
+    <!-- <th scope="col">Project link</th> -->
+    <td> </td>
+
+    <!-- <th scope="col">Project description</th> -->
+    <td> </td>
+    
+    <!-- <th scope="col">ID #</th> -->
+    <td>437</td>
+  </tr>
+
+
+</table>
+</div>

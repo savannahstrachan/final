@@ -1,16 +1,13 @@
 angular.module('AdminCtrl', []).controller('AdminController', function($scope) {
 
     $scope.tagline = 'Existing Database';
+    $scope.showMe = "null";
 
-    function loginFunc() {
-    var txt;
-    var person = prompt("Username:", "");
-    if (person == null || person == "") {
-        txt = "User cancelled the prompt.";
-    } else {
-        txt = "Hello " + person + "! How are you today?";
+    $scope.subClick = function() {
+      console.log('hellooo');
+     
+      $scope.showMe = "show";
     }
-    document.getElementById("demo").innerHTML = txt;
-}
+
 
 });
