@@ -375,15 +375,39 @@ tr:nth-child(even) {
 }
 
 .lefty {
-	background-color: red;
+	text-align: left;
+	padding-top: 10px;
 }
 
 .righty {
 	padding-right: 0px;
 }
 
+.paragraph{
+	text-indent: 50px;
+	text-align: justify;
+}
+
+.menuheader {
+	background-color: navy;
+}
+
+.menuheader ul{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 .menuheader li{
 	display: inline-block;
-	margin-left: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.menulist{
+	text-align: justify-all;
 	margin-right: 20px;
+}
+
+.menulist li{
+	margin-top: 10px;
 }
