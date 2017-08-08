@@ -8,10 +8,6 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 			controller: 'MainController'
 		})
 
-		.when('/application', {
-			templateUrl: 'views/application.html',
-			controller: 'ApplicationController'
-		})
 
 		.when('/contact', {
 			templateUrl: 'views/contact.html',
@@ -41,8 +37,17 @@ angular.module('appRoutes', []).config(['$routeProvider', '$locationProvider', f
 		.when('/alumni', {
 			templateUrl: 'views/Alumni.html',
 			controller: 'AlumniController'
-		});
+		})
 
+		.when('/faq', {
+			templateUrl: 'views/faq.html',
+			controller: 'FAQController'
+		})
+
+		.when('/prework', {
+			templateUrl: 'views/prework.html',
+			controller: 'PreworkController'
+		});
 
 	$locationProvider.html5Mode(true);
 

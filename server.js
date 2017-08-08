@@ -47,40 +47,65 @@ app.listen(process.env.PORT || 5000, function(err) {  // this is changed-- Herok
 })
 
 
+// var ASchema = new mongoose.Schema ({
+// 	firstName: String,
+// 	lastName: String,
+// 	emailAddress: String,
+// 	phone: Number,
+// 	streetAddress: String,
+// 	city: String,
+// 	state: String,
+// 	zipCode: Number,
+// 	codeSkill: Number,
+// 	describe: Number,
+// 	link: String,
+// 	projectDesc: String,
+// 	ID: Number,
+// },{ collection: "application"}
+// );
 
 
 
-var ASchema = new mongoose.Schema ({
-	firstName: String,
-	lastName: String,
-	emailAddress: String,
-	phone: Number,
-	streetAddress: String,
-	city: String,
-	state: String,
-	zipCode: Number,
-	codeSkill: Number,
-	describe: Number,
-	link: String,
-	projectDesc: String,
-	ID: Number,
-},{ collection: "Application"}
-);
+// var Application = mongoose.model('application', ASchema);
 
-
-
-var Application = mongoose.model('application', ASchema);
-
-app.post('/add-app', function (req, res){
-	console.log("/app endpoint getting hit");
+// app.post('/add-app', function (req, res){
+// 	console.log("/app endpoint getting hit");
 	
-	var application = new Application(req.body);
+// 	var application = new Application(req.body);
 
-	application.save(function(err){
-		console.log(application);
+// 	application.save(function(err){
+// 		console.log(application);
 		
-			})
-});
+// 			})
+// });
+
+// var CSchema = new mongoose.Schema ({
+// 	firstName: String,
+// 	lastName: String,
+// 	emailAddress: String,
+// 	phone: Number,
+// 	codeSkill: Number,
+// 	describe: Number,
+// 	link: String,
+// 	projectDesc: String,
+// 	ID: Number,
+// },{ collection: "contact"}
+// );
+
+
+
+// var Contact = mongoose.model('contact', CSchema);
+
+// app.post('/add-contact', function (req, res){
+// 	console.log("/contact endpoint getting hit");
+	
+// 	var contact = new Contact(req.body);
+
+// 	contact.save(function(err){
+// 		console.log(contact);
+		
+// 			})
+// });
 
 
 

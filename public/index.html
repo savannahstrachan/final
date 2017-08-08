@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <base href="/">
 
-  <title>Loyola University New Orleans</title>
+  <title>Loyola</title>
 
   <!-- AJAX + JQUERY -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -35,8 +35,8 @@
   <script src="js/controllers/AlumniCtrl.js"></script>
   <script src="js/services/AlumniService.js"></script>
   <!-- APPLICATION -->
-  <script src="js/controllers/ApplicationCtrl.js"></script>
-  <script src="js/services/ApplicationService.js"></script>
+<!--   <script src="js/controllers/ApplicationCtrl.js"></script>
+  <script src="js/services/ApplicationService.js"></script> -->
   <!-- CONTACT -->
   <script src="js/controllers/ContactCtrl.js"></script>
   <script src="js/services/ContactService.js"></script>
@@ -52,6 +52,15 @@
   <!-- OVERVIEW -->
   <script src="js/controllers/OverviewCtrl.js"></script>
   <script src="js/services/OverviewService.js"></script>
+  <!-- ADMIN -->
+<!--   <script src="js/controllers/AdminCtrl.js"></script>
+  <script src="js/services/AdminService.js"></script> -->
+  <!-- FAQ -->
+  <script src="js/controllers/FAQCtrl.js"></script>
+  <script src="js/services/FAQService.js"></script>
+  <!-- PREWORK -->
+  <script src="js/controllers/PreworkCtrl.js"></script>
+  <script src="js/services/PreworkService.js"></script>
   <!-- ROUTES -->
   <script src="js/appRoutes.js"></script>
   <script src="js/app.js"></script>
@@ -63,7 +72,6 @@
   <link rel="stylesheet" href="css/style.css"> 
 
  
-
 </head>
 
 <body ng-app="sampleApp" ng-controller="AlumniController">
@@ -100,20 +108,20 @@
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experience<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Student Projects</a></li>
-              <li><a href="#">Past Site Visits</a></li>
-              <li><a href="#">Our Alumni</a></li>
+              <li><a href="/projects">Student Projects</a></li>
+              <li><a href="/visits">Past Site Visits</a></li>
+              <li><a href="/alumni">Our Alumni</a></li>
               <li class="divider"></li>
-              <li><a href="#">Admitted Students</a></li>
+              <li><a href="/prework">Admitted Students</a></li>
             </ul>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Course Info<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="about.html">Overview</a></li>
-              <li><a href="faculty.html">Instructors</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="/overview">Overview</a></li>
+              <li><a href="/instructors">Instructors</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/contact">Contact Us</a></li>
               <li class="divider"></li>
               <li><a href="#">Admin Login</a></li>
             </ul>
@@ -131,9 +139,9 @@
 
 
  <!-- AJAX + JQUERY -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>  
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
- -->
+
 </body>
 </html>
