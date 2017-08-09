@@ -285,7 +285,7 @@ a.course {
 
 
 .view{
-	padding-top: 80px;
+	padding-top: 70px;
 }
 
 /*Alumni view:*/
@@ -406,19 +406,25 @@ tr:nth-child(even) {
 	margin-top: 30px;
 }
 
-.carousel-control{
-	padding-top: 250px;
+.pointer {
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	bottom:50%;
 }
+
 
 .lefty {
 	text-align: left;
 	padding: 20px;
-	background-color: rgba(132,129,125,0.2);
+	padding-top: 5px;
+	background: -webkit-linear-gradient(rgba(132,129,125,0.3), rgba(132,129,125,0.4));
+	border-radius: 3px;
 }
 
 .righty {
 	padding-right: 0px;
-	height: 679px;
+	height: 729px;
 }
 
 .paragraph{
@@ -437,6 +443,11 @@ tr:nth-child(even) {
 	padding-left: 10px;
 }
 
+.menuheadline{
+	text-align: center;
+	font-size: 32.5px;
+}
+
 .menulist{
 	padding-left: 20px;
 	text-align: justify-all;
@@ -453,7 +464,7 @@ tr:nth-child(even) {
 
 .maroonbtn {
 	background: -webkit-linear-gradient(#e5554f, #9b1c17);
-	border: solid 1pt white;
+	border: solid 1pt rgba(255,255,255,0.4);
 	font-family: ProximaNovaBold;
 }
 
@@ -499,4 +510,27 @@ tr:nth-child(even) {
 	margin-right: auto;
 	left: 0px;
 	right: 0px;
+}
+
+/*projects view*/
+
+.overflow{
+	overflow: hidden;
+}
+
+.smalljt{
+	padding-right: 100px;
+	padding-left: 100px;
+}
+
+.outsidecaption{
+position: absolute;
+bottom: -40px;
+float: right;
+}
+
+/*application view*/
+
+.marginform {
+	margin-top: 20px;
 }
