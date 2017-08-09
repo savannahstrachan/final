@@ -6,10 +6,18 @@
        url(RobotoSlab-Bold.ttf);
 }
 
+.slabbold{
+	font-family: SlabBold;
+}
+
 @font-face {
   font-family: SlabLight;
   src: local("RobotoSlab-Light"),
        url(RobotoSlab-Light.ttf);
+}
+
+.slablight{
+	font-family: SlabLight;
 }
 
 @font-face {
@@ -18,10 +26,18 @@
 	 url(RobotoSlab-Regular.ttf);
 }
 
+.slabregular{
+	font-family: SlabRegular;
+}
+
 @font-face {
 	font-family: SlabThin;
 	Src: local("RobotoSlab-Thin"),
 	url(RobotoSlab-Thin.ttf);
+}
+
+.slabthin{
+	font-family: SlabThin;
 }
 
 @font-face {
@@ -30,10 +46,28 @@
 	url(Faith And Glory Two.otf);
 }
 
+.faithandglorytwo{
+	font-family: FaithAndGloryTwo;
+}
+
 @font-face {
 	font-family: ProximaNovaLight;
 	Src: local("ProximaNovaAW01-Light"),
 	url(ProximaNovaLight.ttf);
+}
+
+.proximanovalight{
+	font-family: ProximaNovaLight;
+}
+
+@font-face {
+	font-family: ProximaNovaBold;
+	Src: local("ProximaNovaAW01-Semibold"),
+	url(ProximaNovaSemibold.ttf);
+}
+
+.proximanovabold {
+	font-family: ProximaNovaBold;
 }
 
 .fix{
@@ -331,8 +365,6 @@ tr:nth-child(even) {
 	}
 }
 
-#wow {}
-
 #menu {
 	border: 1px solid black;
 }
@@ -380,21 +412,18 @@ tr:nth-child(even) {
 
 .lefty {
 	text-align: left;
-	padding-top: 10px;
+	padding: 20px;
 	background-color: rgba(132,129,125,0.2);
 }
 
 .righty {
 	padding-right: 0px;
+	height: 679px;
 }
 
 .paragraph{
 	text-indent: 50px;
 	text-align: justify;
-}
-
-.menuheader {
-	background-color: navy;
 }
 
 .menuheader ul{
@@ -409,15 +438,37 @@ tr:nth-child(even) {
 }
 
 .menulist{
+	padding-left: 20px;
 	text-align: justify-all;
 	margin-right: 20px;
+	list-style-type: none;
+	border-left: 1pt solid #84817d;
+	margin-left: 10px;
 }
 
 .menulist li{
-	margin-top: 10px;
+	margin-top: 15px;
+	text-decoration: none;
+}
+
+.maroonbtn {
+	background: -webkit-linear-gradient(#e5554f, #9b1c17);
+	border: solid 1pt white;
+	font-family: ProximaNovaBold;
+}
+
+.maroonbtn:hover{
+	border: solid 1pt white;
+	filter: brightness(1.1);
+
 }
 
 /*site visits*/
+
+.sanspagetitle{
+	font-family: ProximaNovalight;
+	font-weight: bold;
+}
 
 .panel-default>.panel-heading {
 	background-color: transparent;
@@ -429,4 +480,23 @@ tr:nth-child(even) {
 
 .panel-heading img {
 	border-radius: 6px;
+}
+
+.panel-heading h4{
+	font-family: ProximaNovaLight;
+}
+
+.tagline {
+	font-family: ProximaNovaLight;
+	margin-top: -5px;
+	margin-bottom: 25px;
+}
+
+.sitelink {
+	position: absolute;
+	bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0px;
+	right: 0px;
 }
