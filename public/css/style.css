@@ -158,16 +158,24 @@ nav.navbar{
 
 a.college {
 	font-family: SlabBold;
-	color: #e5554f;
+	color: #af2a2f;
 	font-size: 20px;
 	text-decoration: none;
 }
 
+.college:hover{
+	color: #e5554f;
+}
+
 a.center {
 	font-family: SlabBold;
-	color: #e5554f;
+	color: #af2a2f;
 	font-size: 20px;
 	text-decoration: none;
+}
+
+.center:hover{
+	color: #e5554f;
 }
 
 span.divider{
@@ -179,13 +187,17 @@ span.divider{
 
 a.course {
 	font-family: SlabLight, serif;
-	color: #af2a2f;
+	color: #e5554f;
 	text-decoration: none;
 	display: block;
 	font-size: 20px;
 	line-height: 0.8em;
 	letter-spacing: 0.3px;
 
+}
+
+.course:hover{
+	color: #af2a2f;
 }
 
 @media only screen and (max-width: 980px){
@@ -534,3 +546,14 @@ float: right;
 .marginform {
 	margin-top: 20px;
 }
+
+.transparent{
+	background-color: rgba(255,255,255,0.8);
+}
+
+.transparent h1{
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+
